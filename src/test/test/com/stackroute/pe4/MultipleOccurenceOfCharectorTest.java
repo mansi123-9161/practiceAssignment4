@@ -17,13 +17,13 @@ public class MultipleOccurenceOfCharectorTest {
 
     }
     @Test
-    public void givenStringArrayShouldReturnValidResult(){
+    public void givenStringArrayShouldReturnValidIndexValueOfCharector(){
         String expected="4-6 10-12 27-29";
         String actual=multipleOccurenceOfCharector.findOccuence("se","She sells seashells by the seashore");
         assertEquals(expected,actual);
     }
     @Test
-    public void givenStringArrayShouldNotReturnValidResult(){
+    public void givenStringArrayShouldNotReturnValidIndexValueOfCharector(){
         String expected="4-4 10-12 27-29";
         String actual=multipleOccurenceOfCharector.findOccuence("se","She sells seashells by the seashore");
        assertNotEquals(expected,actual);

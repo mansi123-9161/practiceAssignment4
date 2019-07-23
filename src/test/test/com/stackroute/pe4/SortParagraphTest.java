@@ -18,7 +18,7 @@ public class SortParagraphTest {
 
     }
     @Test
-    public void givenParagraphArrayShouldSortProperly() {
+    public void givenParagraphArrayShouldReturnSortStringArray() {
         String[] expected={"and","dance","I","love","love","sing","to","to"};
         String[] actual=sortParagraph.paragraphSortArray("I love to dance and love to sing");
 
@@ -26,7 +26,7 @@ public class SortParagraphTest {
         assertArrayEquals(expected,actual);
     }
     @Test
-    public void givenParagraphArrayShouldNotSortProperly() {
+    public void givenParagraphArrayShouldNotReturnSortStringArray() {
         String[] expected={"dance","and","I","love","love","sing","to","to"};
         String[] actual=sortParagraph.paragraphSortArray("I love to dance and love to sing");
 

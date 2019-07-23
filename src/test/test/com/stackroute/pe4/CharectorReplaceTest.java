@@ -17,13 +17,13 @@ public class CharectorReplaceTest {
     public void tearDown() throws Exception {
     }
     @Test
-    public void givenStringCharectorIsReplaced(){
+    public void givenStringShouldReturnNewReplacedString(){
         String expected="faity fry";
         String actualstring=charectorReplace.replaceCharector("daily dry");
         assertEquals(expected,actualstring);
     }
     @Test
-    public void givenStringCharectorIsNotReplaced(){
+    public void givenStringShouldReturnNotNewReplacedString(){
         String expected="faity dry";
         String actualstring=charectorReplace.replaceCharector("daily dry");
         assertNotEquals(expected,actualstring);

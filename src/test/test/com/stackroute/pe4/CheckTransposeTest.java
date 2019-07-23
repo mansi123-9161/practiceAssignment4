@@ -18,7 +18,7 @@ public class CheckTransposeTest {
     }
     @Test
 
-    public void givenStringShouldReturnValidTranspose()  {
+    public void givenStringShouldReturnValidTransposeOfString()  {
 
         String expected="a kciuq nworb xof spmuj revo eht yzal god";
 
@@ -28,7 +28,7 @@ public class CheckTransposeTest {
     }
     @Test
 
-    public void givenStringShouldNotReturnValidTranspose()  {
+    public void givenStringShouldNotReturnValidTransposeOfString()  {
 
         String expected="a quick nworb xof spmuj revo eht yzal god";
 

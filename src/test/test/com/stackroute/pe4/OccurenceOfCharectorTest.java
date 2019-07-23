@@ -18,21 +18,16 @@ public class OccurenceOfCharectorTest {
     }
 
     @Test
-    public void givenStringHasOccurenceOfThatCharector() {
+    public void givenStringShouldHaveOccurenceOfCharector() {
         int expectedValue=6;
         int actualValue=occurenceOfCharector.countOccurence("java is java is java is");
         assertEquals(expectedValue,actualValue);
     }
     @Test
-    public void givenStringHasNotOccurenceOfThatCharector() {
+    public void givenStringShouldNotHaveOccurenceOfThatCharector() {
         int expectedValue=10;
         int actualValue=occurenceOfCharector.countOccurence("java is java is java is");
         assertNotEquals(expectedValue,actualValue);
     }
-    @Test
-    public void givenStringHasOccurenceOfThatCharectorj() {
-        int expectedValue=6;
-        int actualValue=occurenceOfCharector.countOccurence("java is java is java is");
-        assertEquals(expectedValue,actualValue);
-    }
+
 }
