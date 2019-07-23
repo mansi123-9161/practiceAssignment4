@@ -10,25 +10,14 @@ public class CheckTranspose
     {
         String[] transpose=string.split(" ");
         String result=null;
-//        for(int i=0;i<transpose.length;i++)
-//        {
-//            List<String> listValue= Arrays.asList(transpose[i].split(" "));
-//            Collections.reverse(listValue);
-//          //  Object[] objArr = listValue.toArray();
-//            // Iterating and converting to String
-//          //  for (Object obj : objArr) {
-//            //result[i++] = (String)obj;
-//            result=result+String.join(" ",listValue)+" ";
-//            }
-//
-//       // return result.toString();
-//        return result.trim();
-//    }
-        // this method trasposes the input string
+        // this method transposes the input string
         String res = "";
         for (int i = 0; i < transpose.length; i++) {
+            //converting string array to arrayList
             List<String> transposedString = Arrays.asList(transpose[i].split(""));
+            //transposing each word in list using Collections.reverse()
             Collections.reverse(transposedString);
+            //after reversing words,adding them in string using String.join()
             res = res + String.join("", transposedString) + " ";
         }
         return res.trim();
